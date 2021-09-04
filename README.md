@@ -47,3 +47,8 @@ git checkout main
 git merge [자신의 branch 이름]
 ```
 
+## 7. merge 트러블슈팅
+
+`error: You have not concluded your merge (MERGE_HEAD exists).`
+
+참고링크: [click](https://www.lesstif.com/gitbook/git-pull-you-have-not-concluded-your-merge-merge_head-exists-23757078.html)
