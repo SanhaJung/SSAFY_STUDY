@@ -43,7 +43,7 @@ git push  origin [자신의 branch 이름]
 ## 6. merge 시키기
 
 ```bash
-git checkout master
+git checkout main
 git merge [자신의 branch 이름]
 ```
 
