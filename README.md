@@ -51,4 +51,4 @@ git merge [자신의 branch 이름]
 
 `error: You have not concluded your merge (MERGE_HEAD exists).`
 
-참고링크: [click][https://www.lesstif.com/gitbook/git-pull-you-have-not-concluded-your-merge-merge_head-exists-23757078.html]
+참고링크: [click](https://www.lesstif.com/gitbook/git-pull-you-have-not-concluded-your-merge-merge_head-exists-23757078.html)
