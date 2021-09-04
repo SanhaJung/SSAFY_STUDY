@@ -31,7 +31,7 @@ git branch [생성할 이름]
 git checkout [이동할 branch 이름]
 ```
 
-## 5. 작업한거 add, commit, push 하기
+## 5. 작업한거 add, commit, pull, push 하기
 
 ```bash
 git add .
@@ -40,15 +40,4 @@ git pull orgin [자신의 branch 이름]
 git push  origin [자신의 branch 이름]
 ```
 
-## 6. merge 시키기
-
-```bash
-git checkout main
-git merge [자신의 branch 이름]
-```
-
-## 7. merge 트러블슈팅
-
-`error: You have not concluded your merge (MERGE_HEAD exists).`
-
-참고링크: [click](https://www.lesstif.com/gitbook/git-pull-you-have-not-concluded-your-merge-merge_head-exists-23757078.html)
+## 6. pull requests하기
