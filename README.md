@@ -40,33 +40,14 @@ git checkout [이동할 branch 이름]
 ```bash
 git add .
 git commit -m '[message]'
-git push --set-upstream origin [자신의 branch 이름]
+git pull orgin [자신의 branch 이름]
+git push  origin [자신의 branch 이름]
 ```
-
-- 예시
-
-    ![./.assets/images/Untitled.png](./.assets/images/Untitled.png)
 
 ## 6. merge 시키기
 
-### 6-1. pull request
+```bash
+git checkout master
+git merge [자신의 branch 이름]
+```
 
-New pull request 선택
-
-![./.assets/images/Untitled%201.png](./.assets/images/Untitled%201.png)
-
-### 6-2. 자기꺼 branch 선택하기
-
-![./.assets/images/Untitled%202.png](./.assets/images/Untitled%202.png)
-
-### 6-3. create pull request
-
-본인꺼 `commit` 확인하고 `pull request` 보내기
-
-![./.assets/images/Untitled%203.png](./.assets/images/Untitled%203.png)
-
-### 6-4. merge 하기
-
-이상이 없을시 바로 `merge` 하기
-
-![./.assets/images/Untitled%204.png](./.assets/images/Untitled%204.png)
