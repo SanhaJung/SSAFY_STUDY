@@ -24,11 +24,11 @@ public class Main_bj_3190_뱀 {
 		// 바꿀 방향
 		int dd = 0;
 		// 우0, 하1, 좌2, 상3
-		int[][][] D = {//   왼       우    현재방향
-					   { {-1, 0}, { 1, 0}, { 0, 1} },
-					   { { 0, 1}, { 0,-1}, { 1, 0} },
-					   { { 1, 0}, {-1, 0}, { 0,-1} },
-					   { { 0,-1}, { 0, 1}, {-1, 0} },
+		int[][] D = {//   왼       우    현재방향
+					   { 0, 1},
+					   { 1, 0},
+					   { 0,-1},
+					   {-1, 0}
 					   };
 		ArrayDeque<int[]> q = new ArrayDeque<>();
 		ArrayDeque<int[]> snakeQ = new ArrayDeque<>();
@@ -85,8 +85,8 @@ public class Main_bj_3190_뱀 {
 				if(pd==-1) {
 					pd = 3;
 				}
-				ni = pi + D[pd][2][0];
-				nj = pj + D[pd][2][1];
+				ni = pi + D[pd][0];
+				nj = pj + D[pd][1];
 				// 새로운 방향 저장
 				if(q.size()!=0) {
 					int[] temp = q.poll();
@@ -95,8 +95,8 @@ public class Main_bj_3190_뱀 {
 				}
 			// 직진
 			} else {
-				ni = pi + D[pd][2][0];
-				nj = pj + D[pd][2][1];
+				ni = pi + D[pd][0];
+				nj = pj + D[pd][1];
 			}
 			second++;
 			if(0<=ni && ni<N && 0<=nj && nj<N) {
