@@ -21,7 +21,6 @@ public class Main_17144_미세먼지안녕_서울_12반_허은아 {
 			this.c = c;
 			this.amount = amount;
 		}
-
 	}
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
