@@ -41,3 +41,4 @@ git push  origin [자신의 branch 이름]
 ```
 
 ## 6. pull requests하기
+git pull origin main
