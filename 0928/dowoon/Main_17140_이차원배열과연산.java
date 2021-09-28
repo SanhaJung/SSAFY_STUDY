@@ -3,8 +3,6 @@ package s0928;
 import java.io.*;
 import java.util.*;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
-
 public class Main_17140_이차원배열과연산 {
 	
 	static int r, c, k;
