@@ -32,7 +32,7 @@ git checkout [이동할 branch 이름]
 ```
 
 ## 5. 작업한거 add, commit, pull, push 하기
-#### 전체적인 순서는 자신의 브랜치 pull main&mybranch -> add/commit/push(mybranch) -> merge (main) -> push(main) 입니다 
+#### 전체적인 순서는 pull main&mybranch -> add/commit/push(mybranch) -> merge (main) -> push(main) 입니다 
 ```bash
 git checkout [자기 branch 이름]
 git pull orgin [자신의 branch 이름]
