@@ -35,7 +35,6 @@ git checkout [이동할 branch 이름]
 #### 전체적인 순서는 pull main&mybranch -> add/commit/push(mybranch) -> merge (main) -> push(main) 입니다 
 ```bash
 git checkout [자기 branch 이름]
-git pull orgin [자신의 branch 이름]
 git pull origin main
 git add .
 git commit -m '[message]'
