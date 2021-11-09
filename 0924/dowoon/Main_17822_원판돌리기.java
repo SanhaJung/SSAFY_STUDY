@@ -80,8 +80,8 @@ public class Main_17822_원판돌리기 {
 			for(int j=0; j<M; j++) {
 				
 				if(pan[i][j] == -1 || v[i][j]) continue; // 만약 원판에서 숫자가 아니거나(이미 제거된 경우) 이미 방문처리된 경우 스킵 
-				
 				Queue<int[]> q = new ArrayDeque<>();	// 배열의 모든 원소마다 bfs를 진행하기 위해 매번 큐 초기화 
+				
 				q.offer(new int[] {i, j, pan[i][j]});	// 배열의 현재 요소를 큐에 추가  
 				v[i][j] = true;							// 현재 요소 방문처리 
 				
@@ -123,6 +123,7 @@ public class Main_17822_원판돌리기 {
 				if(d==0) {								// 시계방향 (오른쪽으로 쉬프트) 
 					for (int move=0; move<k; move++) {	// 오른쪽으로 1만큼 k번 이동시키면 총 k번 이동시키는 것과 동일 
 						int[] tmp = pan[circle].clone();// 먼저 해당 행을 복사한 다음, 원래의 배열값을 초기화 (동일한 행의 열 값들이 자신보다 왼쪽에 있는 값으로 초기화되기 때문에, 이를 저장해둬야됨 )
+						
 						pan[circle][0] = tmp[M-1];		// 맨 마지막 요소가 오른쪽으로 쉬프트하면 배열의 맨 첫 번째로 오기 때문에 먼저 초기화 해줌 
 						for (int i=1; i<M; i++) {		// 1번째 인덱스부터 배열의 끝까지 자신의 왼쪽(i-1) 인덱스의 값으로 초기화 
 							pan[circle][i] = tmp[i-1];
@@ -131,6 +132,7 @@ public class Main_17822_원판돌리기 {
 				}else if(d==1) {						// 반시계 방향(왼쪽으로 쉬프트)
 					for (int move=0; move<k; move++) {	// 시계방향과 동일 
 						int[] tmp = pan[circle].clone();
+						
 						pan[circle][M-1] = tmp[0];		// 시계방향과 반대 
 						for (int i=0; i<M-1; i++) {
 							pan[circle][i] = tmp[i+1];
