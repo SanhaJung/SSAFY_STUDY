@@ -21,8 +21,8 @@ public class Main_17140_이차원배열과연산 {
 		}
 		@Override
 		public int compareTo(Info o) {
-			int r = Integer.compare(this.count, o.count);
-			if(r==0) r= Integer.compare(this.value, o.value);
+			int r = Integer.compare(this.count, o.count);								// 먼저 등장횟수로 정렬시켜보고 
+			if(r==0) r= Integer.compare(this.value, o.value);							// 등장횟수가 같다면 값으로 정렬 
 			return r;
 		}
 	}
@@ -54,7 +54,7 @@ public class Main_17140_이차원배열과연산 {
 			
 			int rLen = arr.length;
 			int cLen = arr[0].length;
-			int[][] tmp = new int[101][101];
+			int[][] tmp = new int[101][101];											// 생성될 수 있는 최대 크기로 tmp배열 생성(값을 임시로 저장할 배열)
 			if(rLen >= cLen) {
 				// R 연산 
 				int maxLen = -987654321;												// 행 중에서 길이가 제일 긴 행의 길이를 저장할 변수 
@@ -73,6 +73,7 @@ public class Main_17140_이차원배열과연산 {
 						tmp[r][idx++] = rowList.get(j).count;							// 등장횟수 순서로 temp 배열에 저장  
 					}
 					maxLen = maxLen <= rowList.size()*2 ? rowList.size()*2 : maxLen;	// 가장 긴 행을 찾기 위해 maxLen 값 업데이트 (rowlist객체에 값, 등장횟수가 한쌍으로 들어가있으므로, x2 처리해서 비교)
+					// maxLen = Math.max(maxLen, rowList.size()*2);
 				}
 				
 				maxLen = maxLen > 100 ? 100 : maxLen;									// 최대 100개까지만 저장하므로, maxLen값이 100 초과로 초기화되었다면 최대값인 100으로 초기화 
