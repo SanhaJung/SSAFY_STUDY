@@ -112,22 +112,12 @@ public class Main_bj_21610_마법사상어와비바라기 {
 	static void move(ArrayList<int[]> clouds, int d, int s) {
 		for (int i = 0; i < clouds.size(); i++) {
 			int[] cloud = clouds.get(i);
-
-			for (int n = 0; n < s; n++) {
-				cloud[0] += dr[d];
-				cloud[1] += dc[d];
-
-				if (cloud[0] < 0)
-					cloud[0] = N - 1;
-				if (cloud[1] < 0)
-					cloud[1] = N - 1;
-
-				if (cloud[0] >= N)
-					cloud[0] -= N;
-				if (cloud[1] >= N)
-					cloud[1] -= N;
-			}
-
+			cloud[0] = (cloud[0] +s * dr[d]) % N;
+			cloud[1] = (cloud[1] +s * dc[d]) % N;
+ 
+			if (cloud[0] < 0) cloud[0] += N;
+			if (cloud[1] < 0) cloud[1] += N;
+ 
 			clouds.set(i, cloud);
 		}
 	}
