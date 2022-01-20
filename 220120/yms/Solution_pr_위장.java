@@ -13,9 +13,9 @@ class Solution {
         }
         
         for(String s : map.keySet()) { 
-            answer *= (map.get(s)+1); 	// map.get(s) + 아무것도 안고르는 경우의 수 1
+            answer *= (map.get(s)+1); // (map.get(s) + 아무것도 안고르는 경우의 수 1)
         }
 
-        return answer-1;	// 아무것도 안고르는 경우 1 빼줌
+        return answer-1; // 아무것도 안고르는 경우 1개를 빼줌
     }
 }
