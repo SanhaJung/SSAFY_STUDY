@@ -1,6 +1,6 @@
 package programmers; 
 
-public class Solution_347956 {
+public class Solution_43163_단어변환 {
 	public static void main(String[] args) {
 		System.out.println(solution("hit", "cog", new String[] {"hot", "dot", "dog", "lot", "log", "cog"}));
 		System.out.println(solution("hit", "cog", new String[] {"hot", "dot", "dog", "lot", "log"}));
